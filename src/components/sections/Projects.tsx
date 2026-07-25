@@ -11,8 +11,8 @@ const projects = [
     description:
       "Portfolio moderne développé avec Next.js, Tailwind CSS et Framer Motion.",
     tech: ["Next.js", "React", "Tailwind CSS"],
-    github: "https://github.com/bukuruia",
-    demo: "#",
+    github: "https://github.com/bukuruia/portfolio-ian",
+    demo: "#"
   },
   {
     title: "Letterix",
@@ -36,8 +36,24 @@ const projects = [
     description:
       "Application pour la promotion du tourisme en Afrique de l'Est.",
     tech: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/max13003/Biblio-ski",
+    github: "https://github.com/butoyi2k/visit_east-Africa",
     demo: "https://butoyi2k.github.io/visit_east-Africa/",
+  },
+  {
+    title: "Memomaker",
+    image: "/images/projects/MemoMaker.png",
+    description:
+      "Application de bureau interactive conçue pour les voyageurs souhaitant conserver une trace visuelle et émotionnelle de leurs aventures.",
+    tech: ["Java 21", "JavaFX", "MySQL", "Maven", "Git"],
+    github: "https://github.com/max13003/MemoMakerr.git",
+  },
+  {
+    title: "TaskManager DApp",
+    image: "/images/projects/Projet-Blockchain.png",
+    description:
+      "Application décentralisée de gestion de tâches développée sur la blockchain Ethereum, utilisant Solidity, Hardhat et MetaMask.",
+    tech: ["Solidity", "Hardhat", "MetaMask"],
+    github: "https://github.com/hannielyao86-hue/Projet-Block.git ",
   },
 ];
 
@@ -105,27 +121,31 @@ export default function Projects() {
                 ))}
               </div>
 
-              <div className="mt-8 flex gap-4">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 rounded-full border border-zinc-700 px-5 py-3 text-white transition hover:border-green-500"
-                >
-                  <GitBranch size={18} />
-                  GitHub
-                </a>
+              <div className="mt-6 flex flex-wrap gap-3">
+                {/* Bouton GitHub */}
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-full border border-zinc-700 px-5 py-2.5 text-sm font-medium text-white transition duration-300 hover:border-green-500 hover:bg-green-500/10 hover:text-green-400"
+                  >
+                    GitHub
+                  </a>
+                )}
 
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 rounded-full bg-green-500 px-5 py-3 font-semibold text-white transition hover:bg-green-400"
-                >
-                  <ExternalLink size={18} />
-                  Démo
-                </a>
-              </div>
+                {/* Bouton Demo : affiché uniquement si project.demo existe */}
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-full bg-green-500 px-5 py-2.5 text-sm font-medium text-white transition duration-300 hover:scale-105 hover:bg-green-400"
+                  >
+                    Demo
+                  </a>
+                )}
+                </div>
             </div>
           </motion.div>
         ))}
