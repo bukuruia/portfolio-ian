@@ -44,8 +44,8 @@ export default function Hero() {
 
           <p className="mt-6 max-w-xl text-lg leading-8 text-gray-400">
             Étudiant en Informatique & Intelligence Artificielle à l'ESEO.
-            Passionné par le développement Full Stack, Python,
-            l'Intelligence Artificielle et la Blockchain.
+            Passionné par le numérique et surtout 
+            l'Intelligence Artificielle.
           </p>
 
           {/* Boutons */}
