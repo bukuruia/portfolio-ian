@@ -97,7 +97,7 @@ export default function About() {
 
             <video
               controls
-              poster="/images/IMG_0723 (1).PNG"
+              poster="/images/IMG_0724.PNG"
               className="w-full"
             >
               <source src="/videos/7E11D841-13C0-497B-8ACA-3B419FCBCABA (1) (2).mp4" type="video/mp4" />
