@@ -7,7 +7,7 @@ import Image from "next/image";
 const projects = [
   {
     title: "Portfolio",
-    image: "/images/projects/portfolio.jpg",
+    image: "/images/projects/portfolio.png",
     description:
       "Portfolio moderne développé avec Next.js, Tailwind CSS et Framer Motion.",
     tech: ["Next.js", "React", "Tailwind CSS"],
