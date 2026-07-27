@@ -105,16 +105,6 @@ export default function About() {
 
             <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6">
 
-              <div className="flex items-center gap-3">
-
-                <Play className="text-green-400" />
-
-                <p className="font-semibold text-white">
-                  Ma présentation • 1 min
-                </p>
-
-              </div>
-
             </div>
 
           </div>
