@@ -100,7 +100,7 @@ export default function About() {
               poster="/images/profile.jpg"
               className="w-full"
             >
-              <source src="/videos/about.mp4" type="video/mp4" />
+              <source src="/videos/7E11D841-13C0-497B-8ACA-3B419FCBCABA (1) (2).mp4" type="video/mp4" />
             </video>
 
             <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6">
