@@ -71,12 +71,12 @@ export default function Hero() {
           <div className="mt-16 grid grid-cols-3 gap-4">
 
             <div className="rounded-2xl border border-zinc-800 bg-zinc-900/60 p-5 text-center backdrop-blur">
-              <h3 className="text-3xl font-bold text-green-500">10+</h3>
+              <h3 className="text-3xl font-bold text-green-500">6</h3>
               <p className="mt-2 text-gray-400">Projets</p>
             </div>
 
             <div className="rounded-2xl border border-zinc-800 bg-zinc-900/60 p-5 text-center backdrop-blur">
-              <h3 className="text-3xl font-bold text-green-500">15+</h3>
+              <h3 className="text-3xl font-bold text-green-500">10+</h3>
               <p className="mt-2 text-gray-400">Technologies</p>
             </div>
 
