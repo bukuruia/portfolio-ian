@@ -102,7 +102,7 @@ export default function Hero() {
             <div className="relative overflow-hidden rounded-[40px] border border-zinc-700 bg-zinc-900">
 
               <Image
-                src="/images/profile.jpg"
+                src="/images/IMG_20250915_111743_134.webp"
                 alt="Ian Kenny"
                 width={420}
                 height={520}
