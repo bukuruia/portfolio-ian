@@ -86,60 +86,71 @@ export default function About() {
 
         {/* Vidéo */}
 
-        <motion.div
-          initial={{ opacity: 0, x: 60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
+        {/* Colonne droite */}
+<motion.div
+  className="flex-1 space-y-8"
+  initial={{ opacity: 0, x: 60 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 1 }}
+>
+  {/* Vidéo */}
+  <div className="relative overflow-hidden rounded-[35px] border border-zinc-800 bg-zinc-900 shadow-2xl">
+
+    <video
+      controls
+      poster="/images/IMG_0724.PNG"
+      className="w-full"
+    >
+      <source
+        src="/videos/7E11D841-13C0-497B-8ACA-3B419FCBCABA (1) (2).mp4"
+        type="video/mp4"
+      />
+    </video>
+
+  </div>
+
+  {/* Recherche d'alternance */}
+  <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-6">
+
+    <h3 className="mb-4 text-xl font-bold text-white">
+      🎯 Recherche d'un contrat d'apprentissage
+    </h3>
+
+    <p className="mb-5 text-gray-400">
+      Disponible à partir de
+      <span className="font-semibold text-green-400">
+        {" "}septembre 2026
+      </span>
+      {" "}pour une durée de
+      <span className="font-semibold text-green-400">
+        {" "}2 ans
+      </span>.
+    </p>
+
+    <div className="flex flex-wrap gap-3">
+      {[
+        "Assistant développeur",
+        "Technicien informatique applicatif",
+        "Intégrateur web",
+        "Testeur logiciel junior",
+        "Assistant chef de projet numérique",
+        "Développeur Low-Code / No-Code",
+        "Support applicatif",
+        "Automatisation",
+        "Administration d'outils internes",
+      ].map((job) => (
+        <span
+          key={job}
+          className="rounded-full border border-green-500/40 bg-green-500/10 px-4 py-2 text-sm text-green-400"
         >
+          {job}
+        </span>
+      ))}
+    </div>
 
-          <div className="relative overflow-hidden rounded-[35px] border border-zinc-800 bg-zinc-900 shadow-2xl">
-
-            <video
-              controls
-              poster="/images/IMG_0724.PNG"
-              className="w-full"
-            >
-              <source src="/videos/7E11D841-13C0-497B-8ACA-3B419FCBCABA (1) (2).mp4" type="video/mp4" />
-            </video>
-
-            <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6">
-
-            </div>
-
-          </div>
-
-        </motion.div>
-          <div className="flex flex-col lg:flex-row gap-20">
-            <h3 className="mb-4 text-xl font-bold text-white">
-              🎯 Recherche d'un contrat d'apprentissage
-            </h3>
-          
-            <p className="mb-5 text-gray-400">
-              Disponible à partir de <span className="font-semibold text-green-400">septembre 2026</span>
-              pour une durée de <span className="font-semibold text-green-400">2 ans</span>.
-            </p>
-          
-            <div className="flex flex-wrap gap-3">
-              {[
-                "Assistant développeur",
-                "Technicien informatique applicatif",
-                "Intégrateur web",
-                "Testeur logiciel junior",
-                "Assistant chef de projet numérique",
-                "Développeur Low-Code / No-Code",
-                "Support applicatif",
-                "Automatisation",
-                "Administration d'outils internes",
-              ].map((job) => (
-                <span
-                  key={job}
-                  className="rounded-full border border-green-500/40 bg-green-500/10 px-4 py-2 text-sm text-green-400"
-                >
-                  {job}
-                </span>
-              ))}
-            </div>
+  </div>
+</motion.div>
           </div>
 
       </div>
