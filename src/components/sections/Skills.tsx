@@ -19,7 +19,6 @@ const skills = [
       "HTML",
       "CSS",
       "JavaScript",
-      "TypeScript",
       "React",
       "Next.js",
       "Tailwind CSS",
@@ -67,6 +66,7 @@ const skills = [
       "VS Code",
       "IntelliJ IDEA",
       "Figma",
+      "Vercel",
     ],
   },
   {
