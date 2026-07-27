@@ -110,6 +110,37 @@ export default function About() {
           </div>
 
         </motion.div>
+        <div className="mt-8 rounded-2xl border border-zinc-800 bg-zinc-900 p-6">
+  <h3 className="mb-4 text-xl font-bold text-white">
+    🎯 Recherche d'un contrat d'apprentissage
+  </h3>
+
+  <p className="mb-5 text-gray-400">
+    Disponible à partir de <span className="font-semibold text-green-400">septembre 2026</span>
+    pour une durée de <span className="font-semibold text-green-400">2 ans</span>.
+  </p>
+
+  <div className="flex flex-wrap gap-3">
+    {[
+      "Assistant développeur",
+      "Technicien informatique applicatif",
+      "Intégrateur web",
+      "Testeur logiciel junior",
+      "Assistant chef de projet numérique",
+      "Développeur Low-Code / No-Code",
+      "Support applicatif",
+      "Automatisation",
+      "Administration d'outils internes",
+    ].map((job) => (
+      <span
+        key={job}
+        className="rounded-full border border-green-500/40 bg-green-500/10 px-4 py-2 text-sm text-green-400"
+      >
+        {job}
+      </span>
+    ))}
+  </div>
+</div>
 
       </div>
 
