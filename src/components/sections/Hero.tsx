@@ -59,7 +59,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/cv/CV_Ian_Kenny.pdf"
+              href="/cv/CV_2026-07-27_Ian Kenny_BUKURU.pdf"
               className="flex items-center gap-2 rounded-full border border-zinc-700 px-7 py-4 text-white transition hover:border-green-500"
             >
               Télécharger CV
